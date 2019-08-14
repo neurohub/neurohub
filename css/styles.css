@@ -119,6 +119,13 @@ button:hover {
 .dk-blue-bg {
   background-color: #144E76;
 }
+.dk-blue-bg h1,
+.dk-blue-bg h2,
+.dk-blue-bg h3,
+.dk-blue-bg p,
+.dk-blue-bg {
+  color: #fff;
+}
 .center {
   margin: 0 auto;
 }
@@ -253,7 +260,7 @@ div.branding a:hover {
 #showmenu {
   float: right;
   padding: 20px 30px;
-  height: 75px;
+  height: 50px;
   display: flex;
   align-items: center;
 }
@@ -263,17 +270,17 @@ ul.hide {
 .logo {
   display: inline-block;
   width: auto;
-  max-height: 75px;
+  max-height: 50px;
 }
 @media screen and (min-width: 640px) {
   #showmenu {
-    height: 100px;
+    height: 75px;
   }
   .logo {
-    max-height: 100px;
+    max-height: 75px;
   }
   nav.site-nav {
-    height: 100px;
+    height: 75px;
   }
   .nav-container {
     height: 100%;
@@ -291,7 +298,7 @@ ul.hide {
   }
   ul.nav-list li.nav-item a {
     display: flex;
-    font-size: 1.5em;
+    font-size: 1.25em;
     height: 100%;
     border-bottom: 5px solid #fff;
   }
@@ -336,7 +343,7 @@ video#myVideo {
     left: 0;
     width: 100%;
     z-index: -1;
-    margin-top: 100px;
+    margin-top: 75px;
   }
   .video-wrapper {
     position: relative;
