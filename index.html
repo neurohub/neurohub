@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<!-- general -->
+<meta charset="utf-8">
+<title>NeuroHub</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="This is the website of the Neurohub Project.">
+<meta name="keywords" content="Neuro, NeuroHub, Research, Big Data, Science, Medicine, Datalad">
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <!-- navigation -->
+
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html"><img src="images/logo-neurohub.png" class="logo active"></a>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+        <li class="nav-item"><a href="news.html">News</a></li>
+        <li class="nav-item"><a href="tools.html">Tools</a></li>
+        <li class="nav-item"><a href="team.html">Team</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- intro section -->
+  <section class="title-holder">
+    <video autoplay muted loop id="myVideo">
+      <source src="images/background.mp4" type="video/mp4">
+    </video>
+    <div class="title-content">
+      <h1 class="font-red font-shadow">NEUROHUB</h1>
+      <p class="font-white font-shadow">Bringing together data, computational infrastructure platforms, and state-of-the-art technologies</p>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+
+  <!-- intro section -->
+  <section>
+    <div class="section-content">
+      <div class="col-2">stuff</div>
+      <div class="col-2">
+        <h2>Neurohub - An Open Science Infrastructure for Reproducible, Collaborative, Multidisciplinary Scientific Research</h2>
+        <p>At the core of the HBHL research project is the development of an open, scalable neuroinformatics platform with tools that will allow scientists to conduct efficient, reproducible, and collaborative science across disciplines.</p>
+        <p>NeuroHub is leveraging existing technologies developed by the Montreal Neurological Institute (the Neuro), the McGill Centre for Integrative Neuroscience (MCIN) and [the genome center] to develop a robust infrastructure for the integration of complex brain information to stimulate new discoveries.</p>
+        <p>Once online, scientists will be able to use NeuroHub to access, use, and contribute key data using the latest computational and analytical tools.</p>
+        <p>In keeping with McGill’s commitment to Open Science, the NeuroHub will extend the FAIR principles (Free, Accessible, Interoperable and Reusable) and lead the development of international neuroinformatics standards and best practices.</p>
+        <p>NeuroHub represents a major step forward in McGill’s efforts to become a global centre of excellence in Big Data research.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+  <!-- technical section -->
+  <section class="dk-blue-bg">
+    <div class="section-content">
+      <div class="col-2">
+        stuff
+      </div>
+      <div class="col-2">
+        <h2>How will NeuroHub work?</h2>
+        <p>NeuroHub will be an engine to combine data and gain new on the brain and overall health of populations in Canada and around the world.</p>
+        <p>The platform will bring together established data and computational infrastructure with new technologies to provide a web-based platform to support scientific research in neuroinformatics, genomics, social sciences, biology, among others.</p>
+        <p>It will offer researchers a repository of standardized, machine-readable data from a range of sources along with the latest machine learning, neuroinformatics, modeling and statistical tools and techniques, which will facilitate combining analysis with novel, at-scale methodologies.</p>
+        <p>NeuroHub will be among the few neuroscience platforms that will include not only traditional datasets from neuroimaging and genomics, but also cohort and longitudinal data from behavioural, population and social science studies, and soft data extracted from existing publications (e.g. extracting intervention effectiveness or behavioural influences from published studies).</p>
+        <p>Data collected through established platforms at McGill University, (e.g. LORIS, PopHR, CBRAIN, etc…), will be automatically added to the repository, while preserving appropriate levels of data security and privacy. Metadata querying and management technologies such as Datalad will make the data discoverable, accessible and reusable.</p>
+        <p>By linking diverse datasets together with metadata, the platform will federate several known data sources with newly collected and curated sources from McGill research to create one of the richest, searchable data repositories in the world</p>
+      </div>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+
+  <!-- tools section -->
+  <section>
+    <div class="section-content">
+      <div class="col-2">
+        stuff
+      </div>
+      <div class="col-2">
+        <h2>What tools and services will NeuroHub offer?</h2>
+        <p>Neurohub will provide a toolbox equipped with the latest analytical capabilities, compatible with various modalities.</p>
+        <p>Standardized data and metadata will allow these tools able to readily access data in the Neurohub.  Users will be able to interact in several ways depending on their research, their computational needs, and the particular idiom in which they choose to work.</p>
+        <p>Whether it be interactive computing through technologies like Jupyter Notebooks, statistical analysis through tools like R, or well-defined execution pipelines launched on high-performance computing through CBRAIN, users will have full access to the data in a common platform that will allow them to conduct research at whatever scale is necessary to answer their questions.</p>
+        <p>The knowledge captured through work in Neurohub will extend far beyond the study that is being immediately conducted so as to be completely reproducible and allow future research to build upon it.</p>
+        <p>All data and analytics in the platform will be enabled to track the exact provenance and procedural aspects of the research so that the work can be easily shared and reviewed in new interactive modalities of publication such as the emerging open publication platform Aperture, be immediately contributed back as derived data for future analysis, reproduced and validated through automated techniques, and be shared with others in a completely reproducible manner. In this way, Neurohub will continue to grow its knowledge base rather than findings being lost in a sea of inaccessible, non-computable manuscripts and improve the quality and reliability of the science being produced.</p>
+      </div>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+  <!-- footer -->
+
+  <footer>  
+    <div class="section-content flex">
+
+    </div>
+  </footer>
+</div>
+
+<!-- <script>
+    $(document).ready(function() {
+        $('#showmenu').click(function() {
+                $('.nav-list').toggleClass("hide");
+        });
+    });
+</script> -->
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+</body></html>
