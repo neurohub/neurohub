@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- general -->
+<meta charset="utf-8">
+<title>NeuroHub | News</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="This is the news page for the website of the Neurohub Project.">
+<meta name="keywords" content="Neuro, NeuroHub, Research, Big Data, Science, Medicine, Datalad">
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <!-- navigation -->
+
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html"><img src="images/logo-neurohub.png" class="logo bottom"></a>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+        <li class="nav-item"><a href="news.html" class="active">News</a></li>
+        <li class="nav-item"><a href="tools.html">Tools</a></li>
+        <li class="nav-item"><a href="team.html">Team</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- team section  -->
+  <section class="extra-top">
+    <div class="section-content flex card-holder">
+      <h1 class="full-width text-center">News</h1>
+      <div class="card" data-aos="fade-in">
+        <img src="images/news/skyline.jpg" class="block-image">
+        <div class="card-name">News title</div>
+        <div class="card-jobtitle">Bacon ipsum dolor amet flank beef ribs filet mignon chicken pork loin, brisket biltong turducken drumstick swine ham hock pastrami andouille buffalo. </div>
+        <a href="http://mcin.ca">read full article</a>
+      </div>
+      <div class="card" data-aos="fade-in">
+        <img src="images/news/skyline.jpg" class="block-image">
+        <div class="card-name">News title</div>
+        <div class="card-jobtitle">Bacon ipsum dolor amet flank beef ribs filet mignon chicken pork loin, brisket biltong turducken drumstick swine ham hock pastrami andouille buffalo. </div>
+        <a href="http://mcin.ca">read full article</a>
+      </div>
+      <div class="card" data-aos="fade-in">
+        <img src="images/news/skyline.jpg" class="block-image">
+        <div class="card-name">News title</div>
+        <div class="card-jobtitle">Bacon ipsum dolor amet flank beef ribs filet mignon chicken pork loin, brisket biltong turducken drumstick swine ham hock pastrami andouille buffalo. </div>
+        <a href="http://mcin.ca">read full article</a>
+      </div>
+      <div class="card" data-aos="fade-in">
+        <img src="images/news/skyline.jpg" class="block-image">
+        <div class="card-name">News title</div>
+        <div class="card-jobtitle">Bacon ipsum dolor amet flank beef ribs filet mignon chicken pork loin, brisket biltong turducken drumstick swine ham hock pastrami andouille buffalo. </div>
+        <a href="http://mcin.ca">read full article</a>
+      </div>
+      <div class="card" data-aos="fade-in">
+        <img src="images/news/skyline.jpg" class="block-image">
+        <div class="card-name">News title</div>
+        <div class="card-jobtitle">Bacon ipsum dolor amet flank beef ribs filet mignon chicken pork loin, brisket biltong turducken drumstick swine ham hock pastrami andouille buffalo. </div>
+        <a href="http://mcin.ca">read full article</a>
+      </div>
+      
+    </div>
+  </section>
+ <!-- footer -->
+
+  <footer>  
+    <div class="section-content flex">
+      <div class="contact-card">
+        <img src="images/contact-neuro.jpg">
+        <div>
+          <h3>Montreal Neurological Institute and Hospital</h3>
+          <address>3801 Rue Université, Montréal, QC H3A 2B4</address>
+        </div>
+      </div>
+      <div class="contact-email font-white">
+        <h3>Contact Us</h3>
+        General Inquiries: <a href="mailto:info@neurohub.ca" class="font-white">info@neurohub.ca</a>
+      </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- <script>
+    $(document).ready(function() {
+        $('#showmenu').click(function() {
+                $('.nav-list').toggleClass("hide");
+        });
+    });
+</script> -->
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({duration: 800, offset: 0,});
+  </script>
+</body></html>
