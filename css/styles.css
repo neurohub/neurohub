@@ -13,7 +13,7 @@ body {
   min-width: 300px;
   /*overflow: hidden;*/
   font-family: 'Libre Baskerville', serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #343434;
 }
 p, ul, ol {
@@ -54,6 +54,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 h3 {
   font-size: 1.25rem;
@@ -117,7 +118,7 @@ button:hover {
   text-shadow: 0 0 8px rgba(0,0,0,0.75);
 }
 .dk-blue-bg {
-  background-color: #144E76;
+  background-color: #003943;
 }
 .dk-blue-bg h1,
 .dk-blue-bg h2,
@@ -183,9 +184,20 @@ button:hover {
 .section-content.no-margin p:last-of-type {
   margin-bottom: 0;
 }
+.section-content img {
+  padding: 0 25px 50px;
+  max-width: 325px;
+  max-height: 325px;
+  height: auto;
+  width: auto;
+}
 @media screen and (min-width: 640px) {
   .section-content {
     padding: 0 40px;
+  }
+  .section-content img {
+    max-width: 400px;
+    max-height: 400px;
   }
   .col-4 {
     width: 50%;
@@ -194,6 +206,11 @@ button:hover {
   }
 }
 @media screen and (min-width: 800px) {
+  .section-content img {
+    padding: 0 25px 25px;
+    max-width: 480px;
+    max-height: 480px;
+  }
   .col-2 {
     width: 50%;
     float: left;
@@ -336,7 +353,21 @@ video#myVideo {
   max-width: 320px;
   text-align: center;
 }
+.title-content h1 {
+  font-size: 1.5em;
+}
+.title-content p {
+  font-size: 1em;
+  padding: 0 25px;
+}
 @media screen and (min-width: 640px) {
+  .title-content h1 {
+    font-size: 2em;
+  }
+  .title-content p {
+    font-size: 1em;
+    padding: 0;
+  }
     video#myVideo {
     position: relative;
     top: 0;
