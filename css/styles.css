@@ -175,7 +175,7 @@ button:hover {
   max-width: 1200px;
   margin: 80px auto;
   padding: 0 20px;
-  overflow: auto;
+  overflow: hidden;
 }
 .section-content p:last-of-type {
   margin-bottom: 40px;
