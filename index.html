@@ -46,6 +46,7 @@
       <p class="font-white font-shadow">Bringing together data, computational infrastructure platforms, and state-of-the-art technologies</p>
     </div>
   </section>
+  <div id="prompt" class="">Scroll Down</div>
   <div class="clear-all"></div>
 
   <!-- intro section -->
@@ -133,8 +134,17 @@
     });
   });
 </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({duration: 1000, offset: 120,});
-  </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({duration: 1000, offset: 120,});
+</script>
+<script>
+$(window).scroll(function() {
+   if ($(this).scrollTop() > 200){
+      $('#prompt').addClass("invisible");
+   } else {
+      $('#prompt').removeClass("invisible");
+   }
+});
+</script>
 </body></html>

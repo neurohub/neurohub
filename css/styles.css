@@ -538,4 +538,29 @@ img.block-image {
     width: calc(25% - 30px);
   }
 }
-
+/* The animation code */
+@keyframes pulse {
+  0%   {opacity: 0.25;}
+  50%  {opacity: 1;}
+  100% {opacity: 0.25;}
+}
+#prompt {
+  position: fixed;
+  bottom: 20px;
+  left: calc(50% - 60px);
+  width: 120px;
+  text-align: center;
+  pointer-events: none;
+  color: #fff;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  background-color: rgba(0,0,0,.75);
+  padding: 10px;
+  border-radius: 25px;
+  z-index: 10000;
+}
+.invisible {
+  display: none;
+}
