@@ -420,7 +420,7 @@ video#myVideo {
 
 footer {
   position: relative;
-  background-color: #000;
+  background-color: #343434;
   padding: 80px 0 40px;
 }
 footer .section-content {
@@ -485,7 +485,7 @@ footer .section-content {
   width: 100%;
   padding: 15px;
   margin: 0 15px 30px;
-  border: 3px solid #21BDBD;
+  border: 3px solid #b9b9b9;
   border-radius: 20px;
   background-color: #fff;
   overflow: hidden;
@@ -493,7 +493,11 @@ footer .section-content {
 .card img {
   border-radius: 200px;
   margin-bottom: 20px;
-  border: 3px solid #21BDBD;
+  border: 3px solid #b9b9b9;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card a {
   display: block;
