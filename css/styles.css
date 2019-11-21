@@ -367,6 +367,8 @@ ul.hide {
   position: relative;
   align-content: center;
   justify-content: center;
+  max-height: 800px;
+  overflow: hidden;
 }
 video#myVideo {
   margin-top: 50px;
