@@ -511,6 +511,7 @@ footer .section-content {
 }
 .card-jobtitle {
   margin-bottom: .5rem;
+  font-size: 13px;
 }
 img.block-image {
   width: calc(100% + 60px);
