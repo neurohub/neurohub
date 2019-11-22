@@ -148,6 +148,9 @@ button:hover {
   justify-content: space-evenly;
   align-items: stretch;
 }
+.flex-center {
+  justify-content: center !important;
+}
 .full-width {
   width: 100%;
 }
@@ -550,6 +553,10 @@ img.block-image {
   .card {
     width: calc(25% - 30px);
   }
+}
+.team-list {
+  list-style: inside;
+  padding: 30px 20px;
 }
 /* The animation code */
 @keyframes pulse {
