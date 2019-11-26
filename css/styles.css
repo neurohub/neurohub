@@ -129,6 +129,9 @@ button:hover {
 .dk-blue-bg {
   color: #fff;
 }
+.grey-bg {
+  background-color: #efefef;
+}
 .center {
   margin: 0 auto;
 }
@@ -162,6 +165,9 @@ button:hover {
 }
 .extra-top h1 {
   margin-bottom: 20px;
+}
+.extra-top:last-of-type {
+  padding-bottom: 100px;
 }
 @media screen and (min-width: 630px) {
   .extra-top {
@@ -212,6 +218,9 @@ button:hover {
   max-width: 325px;
   max-height: 325px;
   height: auto;
+  width: 100%;
+}
+.auto-width {
   width: auto;
 }
 @media screen and (min-width: 640px) {
@@ -300,7 +309,7 @@ div.branding a:hover {
 #showmenu {
   float: right;
   padding: 20px 30px;
-  height: 50px;
+  height: 55px;
   display: flex;
   align-items: center;
 }
@@ -310,7 +319,7 @@ ul.hide {
 .logo {
   display: inline-block;
   width: auto;
-  max-height: 50px;
+  max-height: 55px;
 }
 .bottom {
   border-bottom: 5px solid #fff;
@@ -322,10 +331,13 @@ ul.hide {
     height: 75px;
   }
   .logo {
-    max-height: 75px;
+    max-height: 80px;
   }
   nav.site-nav {
     height: 75px;
+  }
+  nav.site-nav {
+    height: 80px;
   }
   .nav-container {
     height: 100%;
@@ -372,6 +384,7 @@ ul.hide {
   justify-content: center;
   max-height: 800px;
   overflow: hidden;
+  line-height: 0;
 }
 video#myVideo {
   margin-top: 50px;
@@ -383,6 +396,7 @@ video#myVideo {
   left: calc(50% - 160px);
   max-width: 320px;
   text-align: center;
+  line-height: initial;
 }
 .title-content h1 {
   font-size: 1.5em;
@@ -428,7 +442,30 @@ video#myVideo {
       text-align: center;
   }
 }
-
+@media screen and (min-width: 1024px) {
+  .title-content {
+    max-width: 500px;
+    left: calc(50% - 250px);
+  }
+  .title-content h1 {
+    font-size: 3em;
+  }
+  .title-content p {
+    font-size: 1.25em;
+  }
+}
+.section-vision {
+  margin: 0;
+  padding: 10px;
+  background: #000;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: #b7b7b7;
+}
+.section-vision p {
+  margin-bottom: 0;
+}
 /* footer */
 
 footer {
@@ -488,6 +525,28 @@ footer .section-content {
   }
   .contact-card address {
     font-size: 1em;
+  }
+}
+.logos {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.logos a {
+  min-width: 100px;
+  max-width: 200px;
+  margin: 15px;
+}
+.logos a img {
+  padding: 10px;
+  border-radius: 15px;
+  background: #fff;
+}
+@media screen and min-width: 640px {
+  .logos {
+    flex-flow: nowrap;
   }
 }
 
@@ -555,9 +614,11 @@ img.block-image {
   }
 }
 .team-list {
-  list-style: inside;
+  /*list-style: inside;*/
   padding: 30px 20px;
 }
+
+
 /* The animation code */
 @keyframes pulse {
   0%   {opacity: 0.25;}
