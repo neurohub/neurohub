@@ -121,6 +121,9 @@ button:hover {
 .font-shadow {
   text-shadow: 0 0 8px rgba(0,0,0,0.75);
 }
+.font-shadow2 {
+  text-shadow: 0 0 8px #fff;
+}
 .dk-blue-bg {
   background-color: #003943;
 }
