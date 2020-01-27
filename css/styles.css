@@ -397,6 +397,7 @@ video#myVideo {
   max-width: 320px;
   text-align: center;
   line-height: initial;
+  z-index: 1000;
 }
 .title-content h1 {
   font-size: 1.5em;
@@ -634,8 +635,8 @@ img.block-image {
 #prompt {
   position: fixed;
   bottom: 20px;
-  left: calc(50% - 60px);
-  width: 120px;
+  left: calc(50% - 30px);
+  width: 60px;
   text-align: center;
   pointer-events: none;
   color: #fff;
