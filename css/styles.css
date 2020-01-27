@@ -69,12 +69,14 @@ p {
   margin-bottom: 1em;
 }
 a {
-  color: #8c0000;
+  /*color: #8c0000;*/
+  color: #b91f20;
   transition: all 0.25s ease;
 }
 a:hover,
 a:focus {
-  color: #DC2627;
+  /*color: #DC2627;*/
+  color: #ff0000;
 }
 button {
   border: none;
