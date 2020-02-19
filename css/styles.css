@@ -321,6 +321,15 @@ ul.hide {
   width: auto;
   max-height: 55px;
 }
+.logo-hero {
+  display: inline-block;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 20px; 
+  margin-bottom: 15px;
+  width: 50%;
+  max-width: 300px; 
+}
 .bottom {
   border-bottom: 5px solid #fff;
   transition: all 0.25s ease;
@@ -332,6 +341,9 @@ ul.hide {
   }
   .logo {
     max-height: 80px;
+  }
+  .logo-hero {
+    width: 75%;
   }
   nav.site-nav {
     height: 75px;
@@ -407,7 +419,7 @@ video#myVideo {
   padding: 10px 30px;
 }
 .title-content p {
-  font-size: 1em;
+  font-size: .9em;
   padding: 0 25px;
 }
 @media screen and (min-width: 640px) {
@@ -441,7 +453,7 @@ video#myVideo {
   }
   .title-content {
       position: absolute;
-      top: 50%;
+      top: 45%;
       left: calc(50% - 200px);
       max-width: 400px;
       text-align: center;
@@ -462,7 +474,7 @@ video#myVideo {
 .section-vision {
   margin: 0;
   padding: 10px;
-  background: #000;
+  background: #f5f5f5;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -629,7 +641,8 @@ img.block-image {
 /* The animation code */
 @keyframes pulse {
   0%   {opacity: 0.25;}
-  50%  {opacity: 1;}
+  50%  {opacity: 0.25;}
+  75%  {opacity: 0.6;}
   100% {opacity: 0.25;}
 }
 #prompt {
@@ -641,7 +654,7 @@ img.block-image {
   pointer-events: none;
   color: #fff;
   animation-name: pulse;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   background-color: rgba(0,0,0,.75);
