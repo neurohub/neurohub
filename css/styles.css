@@ -170,7 +170,13 @@ button:hover {
 .extra-top h1 {
   margin-bottom: 20px;
 }
-@media screen and (min-width: 630px) {
+.team-section h1 {
+  margin: 30px auto 20px;
+}
+.list-section h1 {
+  margin: 20px auto 0px;
+}
+@media screen and (min-width: 800px) {
   .extra-top {
     padding-top: 40px;
   }
@@ -178,7 +184,9 @@ button:hover {
     margin-bottom: 40px;
   }
 }
-
+.invert {
+  filter: invert(100%);
+}
 /*** 
 *
 * Content 
@@ -335,7 +343,7 @@ ul.hide {
   transition: all 0.25s ease;
   align-items: center;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
   #showmenu {
     height: 75px;
   }
@@ -422,7 +430,7 @@ video#myVideo {
   font-size: .9em;
   padding: 0 25px;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
   .title-content h1 {
     font-size: 2em;
   }
