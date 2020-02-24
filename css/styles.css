@@ -23,6 +23,7 @@ p, ul, ol {
 }
 li {
   margin-left: 1em;
+  margin-bottom: 1em;
 }
 section {
   overflow: auto;
