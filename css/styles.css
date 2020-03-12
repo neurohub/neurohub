@@ -159,6 +159,9 @@ button:hover {
 .flex-center {
   justify-content: center !important;
 }
+.flex-align-center {
+  align-items: center;
+}
 .full-width {
   width: 100%;
 }
@@ -645,7 +648,16 @@ img.block-image {
   /*list-style: inside;*/
   padding: 30px 20px;
 }
-
+.github-icon {
+  margin: 20px auto 0px auto; 
+  width: 32px;
+  height: auto;
+}
+@media screen and (min-width: 800px) {
+  .github-icon {
+    margin: 0 auto 10px auto;
+  }
+} 
 
 /* The animation code */
 @keyframes pulse {
