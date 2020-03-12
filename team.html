@@ -27,9 +27,11 @@
 <meta name="keywords" content="Neuro, NeuroHub, Research, Big Data, Science, Medicine, Datalad">
 <meta name="author" content="Derek Lo @ 3design-dlo.com">
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
 </head>
 <body>
 <div id="main-wrapper">
@@ -40,7 +42,16 @@
       <a href="index.html"><img src="images/logo-neurohub.png" class="logo bottom" alt="NeuroHub logo"></a>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="#!">About</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="about.html">About Neurohub</a>
+            </li>
+            <li>
+              <a href="vision.html">Our Vision</a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="events.html">Events</a></li>
         <li class="nav-item"><a href="tools.html">Tools</a></li>
         <li class="nav-item"><a href="team.html" class="active">Team</a></li>
@@ -82,11 +93,11 @@
           <div class="card-name">Serge Boroday</div>
           <div class="card-jobtitle">Research Software Developer</div>
         </div>
-<!--         <div class="card" data-aos="fade-in">
-          <img src="images/team/shawn.jpg" class="card-image" alt="Image of Shawn">
-          <div class="card-name">Shawn Brown</div>
-          <div class="card-jobtitle">PhD - Chief Technical Officer, Platform Co-Lead</div>
-        </div> -->
+        <div class="card" data-aos="fade-in">
+          <img src="images/team/candice.jpg" class="card-image" alt="Image of Shawn">
+          <div class="card-name">Candice Czech</div>
+          <div class="card-jobtitle">Research Software Developer</div>
+        </div>
         <div class="card" data-aos="fade-in">
           <img src="images/team/samir.jpg" class="card-image" alt="Image of Samir">
           <div class="card-name">Samir Das</div>

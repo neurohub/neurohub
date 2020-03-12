@@ -27,9 +27,11 @@
 <meta name="keywords" content="Neuro, NeuroHub, Research, Big Data, Science, Medicine, Datalad">
 <meta name="author" content="Derek Lo @ 3design-dlo.com">
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
 </head>
 <body>
 <div id="main-wrapper">
@@ -37,10 +39,19 @@
 
   <nav class="site-nav">
     <div class="nav-container">
-      <a href="index.html"><img src="images/logo-neurohub.png" class="logo active" alt="NeuroHub logo"></a>
+      <a href="index.html"><img src="images/logo-neurohub.png" class="logo bottom active" alt="NeuroHub logo"></a>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="#!">About</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="about.html">About Neurohub</a>
+            </li>
+            <li>
+              <a href="vision.html">Our Vision</a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="events.html">Events</a></li>
         <li class="nav-item"><a href="tools.html">Tools</a></li>
         <li class="nav-item"><a href="team.html">Team</a></li>
@@ -65,7 +76,7 @@
 
     <!-- vision document section -->
     <section class="section-vision">
-      <p><a href="docs/NeuroHub-vision-document.pdf">View more information on the NeuroHub vision</a>.</p>
+      <p><a href="vision.html">View more information on the NeuroHub vision</a>.</p>
     </section>
 
     <!-- intro section -->
