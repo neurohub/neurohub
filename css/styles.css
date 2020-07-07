@@ -25,6 +25,9 @@ li {
   margin-left: 1em;
   margin-bottom: 1em;
 }
+li p:last-of-type {
+  margin-bottom: 0 !important;
+}
 section {
   overflow: auto;
   background: #fff;
@@ -103,6 +106,13 @@ button:hover {
     width: auto;
     margin: 0;
   }
+}
+code {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 1px solid #dadada;
 }
 .dropcap{
   color: #ff0000;
@@ -197,6 +207,7 @@ button:hover {
 .invert 
   filter: invert(100%);
 }
+
 /*** 
 *
 * Content 
@@ -390,7 +401,7 @@ ul.hide {
   box-shadow: rgba(0,0,0,.5) -2px 2px 4px;
   line-height: normal;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 980px) {
   #showmenu {
     height: 75px;
   }
