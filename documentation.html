@@ -28,6 +28,7 @@
 <meta name="author" content="Derek Lo @ 3design-dlo.com">
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
+<link rel="stylesheet" type="text/css" href="css/accordion.css" />
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -65,7 +66,7 @@
     <!-- statement section -->
     <section class="extra-top">
       <div class="section-content">
-        <h1 class="full-width text-center">How to Acces the UK Biobank</h1>
+        <h1 class="full-width text-center">How to Access the UK Biobank</h1>
         <div class="col-2 flex" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-offset="100"><img src="images/infographic-what.png" class="infographic" alt="Infographic showing different modalities around HBHL logo"></div>
         <div class="col-2" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delay="250">
           <h2>User Instructions</h2>
@@ -97,49 +98,70 @@
               <p><strong>To request access to the UK Biobank data via the NeuroHub platform, please complete step 4.</strong></p>
               <p><strong>To request access to the UK Biobank data via the Compute Canada Béluga system, please complete steps 5 and 6.</strong></p>
             </li>
-            <h3>To request access the UK Biobank data through the NeuroHub Platform</h3>
-            <li>
-              <p>NeuroHub registration process</p>
-              <p><!--null--></p>
-              <ol type="a">
-                <li>Visit the <a href="https://portal.cbrain.mcgill.ca:5000/signin">NeuroHub portal</a>, and <a href="https://portal.cbrain.mcgill.ca:5000/nh_signups/new">request an account</a> if needed.
-                  <ol type="i">
-                    <li>Account requests will be confirmed by email once created within the NeuroHub portal.  For new account requests please ensure to use your McGill email address which would have been used for your registration with the UK Biobank.</li>
-                    <li>If you already have a <a href="http://www.cbrain.ca/">CBRAIN</a> account, it will work with NeuroHub.</li>
-                    <li>At this time, the NeuroHub portal is available in the Alpha release phase.  As such, you must be connected to the <a href="http://kb.mcgill.ca/it/vpn">McGill VPN</a> in order to access the NeuroHub portal.  The portal will be made more broadly accessible once early-user testing is completed and the portal subsequently put into full production.</li>
-                  </ol>
-                </li>
-                <li>Login to the NeuroHub portal and go to the Projects tab.  Under the list of Projects you will see the datasets associated with the UK Biobank.  Dataset files can be downloaded via the NeuroHub portal for analysis on your local system.  Additional data processing capabilities will soon be added directly into the NeuroHub portal.</li>
-                <p><strong>To request access the UK Biobank data through the Compute Canada Béluga system</strong></p>
-              </ol>
-            </li>
-            <h3>To request access the UK Biobank data through the Compute Canada Béluga system</h3>
-            <li>
-              <p>Apply for a <a href="https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/">Compute Canada</a> account if you do not already have an account.  The above link provides detailed information about how to apply for a Compute Canada account.</p>
-              <ol type="a">
-                <li>Select the “Register” action from the front-page of the Compute Canada Database <a href="https://ccdb.computecanada.ca/security/login">(CCDB)</a></li>
-                <li>Complete the registration procedure specifying your Institution, Department and Position details.</li>
-              </ol>
-              <p>For the “Sponsor” information you must specify the CCRI (Compute Canada Role Identifier) of your immediate supervisor (Faculty Member).  This information will be available from your supervisor.  It will look like (abc-123-12). If you are a Faculty member, alternate information will be requested.</p> 
-              <p><strong>Once you have received confirmation that your Compute Canada registration has been completed and approved by your immediate supervisor, or if you already have a Compute Canada account, proceed to Step 6.</strong></p>
-            </li>
-            <li>
-              <p>Request access to the UK Biobank Compute Canada data sharing group.</p>
-              <ol type="a">
-                <li>
-                  <p>Send an email to <a href="mailto:ukbiobank.neurohub@mcin.ca">ukbiobank.neurohub@mcin.ca</a> with the Subject: <strong>“NeuroHub Compute Canada Access Request”</strong> and the body of the email containing the value of your CCRI, as well as your first and last name.  Please ensure to send the email from the McGill email address with which you have registered to the UK Biobank.</p>
-                  <p>Your CCRI (Compute Canada Role Identifier) can be determined by:
-                    <ul>
-                      <li>login to the Compute Canada Database <a href="https://ccdb.computecanada.ca/security/login">(CCDB</a></li>
-                      <li>your CCRI is indicated in bold and is of the form abc-123-12</li>
-                    </ul>
-                  </p>
-                </li>
-                <li>
-                  <p>Once approved, you can access the UK Biobank data on the Béluga computing system of Compute Canada.  Access to Béluga is possible via SSH to beluga.computecanada.ca.  These data are provided “as-is” and are located within the following NeuroHub directory: </p>
-                  <code>/project/rpp-aevans-ab/neurohub/ukbb/</code>
-                  <p><strong>Please note</strong>: Only users who have successfully completed the full steps of the registration process and have been approved by the NeuroHub team will be enabled to access the UK Biobank data on Béluga.  Access controls are in place which restrict access to the UK Biobank data such that only users who have been authorized to join the data sharing group may access the data.</p>
-                </li>
+              <div class="row">
+                <div class="col">
+                  <div class="tabs">
+                    <div class="tab">
+                      <input type="checkbox" id="chck1">
+                      <label class="tab-label" for="chck1">4. To request access the UK Biobank data through the NeuroHub Platform</label>
+                      <div class="tab-content">
+                        <li>
+                          <h3>NeuroHub registration process</h3>
+                          <ol type="a">
+                            <li>Visit the <a href="https://portal.cbrain.mcgill.ca:5000/signin">NeuroHub portal</a>, and <a href="https://portal.cbrain.mcgill.ca:5000/nh_signups/new">request an account</a> if needed.
+                              <ol type="i">
+                                <li>Account requests will be confirmed by email once created within the NeuroHub portal.  For new account requests please ensure to use your McGill email address which would have been used for your registration with the UK Biobank.</li>
+                                <li>If you already have a <a href="http://www.cbrain.ca/">CBRAIN</a> account, it will work with NeuroHub.</li>
+                                <li>At this time, the NeuroHub portal is available in the Alpha release phase.  As such, you must be connected to the <a href="http://kb.mcgill.ca/it/vpn">McGill VPN</a> in order to access the NeuroHub portal.  The portal will be made more broadly accessible once early-user testing is completed and the portal subsequently put into full production.</li>
+                              </ol>
+                            </li>
+                            <li>Login to the NeuroHub portal and go to the Projects tab.  Under the list of Projects you will see the datasets associated with the UK Biobank.  Dataset files can be downloaded via the NeuroHub portal for analysis on your local system.  Additional data processing capabilities will soon be added directly into the NeuroHub portal.</li>
+                          </ol>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="row">
+                <div class="col">
+                  <div class="tabs">
+                    <div class="tab">
+                      <input type="checkbox" id="chck2">
+                      <label class="tab-label" for="chck2">5. To request access the UK Biobank data through the Compute Canada Béluga system</label>
+                      <div class="tab-content">
+                        <li>
+                          <p>Apply for a <a href="https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/">Compute Canada</a> account if you do not already have an account.  The above link provides detailed information about how to apply for a Compute Canada account.</p>
+                          <ol type="a">
+                            <li>Select the “Register” action from the front-page of the Compute Canada Database <a href="https://ccdb.computecanada.ca/security/login">(CCDB)</a></li>
+                            <li>Complete the registration procedure specifying your Institution, Department and Position details.</li>
+                          </ol>
+                          <p>For the “Sponsor” information you must specify the CCRI (Compute Canada Role Identifier) of your immediate supervisor (Faculty Member).  This information will be available from your supervisor.  It will look like (abc-123-12). If you are a Faculty member, alternate information will be requested.</p> 
+                          <p><strong>Once you have received confirmation that your Compute Canada registration has been completed and approved by your immediate supervisor, or if you already have a Compute Canada account, proceed to Step 6.</strong></p>
+                        </li>
+                        <li>
+                          <p>Request access to the UK Biobank Compute Canada data sharing group.</p>
+                          <ol type="a">
+                            <li>
+                              <p>Send an email to <a href="mailto:ukbiobank.neurohub@mcin.ca">ukbiobank.neurohub@mcin.ca</a> with the Subject: <strong>“NeuroHub Compute Canada Access Request”</strong> and the body of the email containing the value of your CCRI, as well as your first and last name.  Please ensure to send the email from the McGill email address with which you have registered to the UK Biobank.</p>
+                              <p>Your CCRI (Compute Canada Role Identifier) can be determined by:
+                                <ul>
+                                  <li>login to the Compute Canada Database <a href="https://ccdb.computecanada.ca/security/login">(CCDB</a></li>
+                                  <li>your CCRI is indicated in bold and is of the form abc-123-12</li>
+                                </ul>
+                              </p>
+                            </li>
+                            <li>
+                              <p>Once approved, you can access the UK Biobank data on the Béluga computing system of Compute Canada.  Access to Béluga is possible via SSH to beluga.computecanada.ca.  These data are provided “as-is” and are located within the following NeuroHub directory: </p>
+                              <code>/project/rpp-aevans-ab/neurohub/ukbb/</code>
+                              <p><strong>Please note</strong>: Only users who have successfully completed the full steps of the registration process and have been approved by the NeuroHub team will be enabled to access the UK Biobank data on Béluga.  Access controls are in place which restrict access to the UK Biobank data such that only users who have been authorized to join the data sharing group may access the data.</p>
+                            </li>
+                          </ol>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </ol>
             </li>
           </ol>
@@ -188,5 +210,7 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({duration: 1000, offset: 120,});
+</script>
+
 </script>
 </body></html>
