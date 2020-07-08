@@ -37,6 +37,8 @@ input {
   background: #2C8EB3;
   font-weight: bold;
   cursor: pointer;
+      -webkit-transition: 0.25s; /* Safari */
+  transition: 0.25s;
   /* Icon */
 }
 .tab-label:hover {
