@@ -367,6 +367,10 @@ ul.hide {
 .new, 
 .beta {
   position: relative;
+  /*max-width: 50%;*/
+}
+.beta-max50 {
+  max-width: 50%;
 }
 .beta::after {
   position: absolute;
@@ -719,6 +723,34 @@ img.block-image {
   }
 } 
 
+/*Beta Announecement*/
+.beta-announce {
+  display: none;
+}
+.beta-announce h1,
+.beta-section h1 {
+  font-size: 18px;
+  color: #fff;
+}
+.beta-announce h2,
+.beta-section h2 {
+  font-size: 14px;
+  color: #fff;
+}
+.beta-section {
+  display: block;
+  text-align: center;
+  background: #343434;
+  padding: 20px 0 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .beta-announce {
+    display: block;
+  }
+  .beta-section {
+    display: none;
+  }
+}
 /* The animation code */
 @keyframes pulse {
   0%   {opacity: 0.25;}
