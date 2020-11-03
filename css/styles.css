@@ -365,7 +365,8 @@ ul.hide {
   align-items: center;
 }
 .new, 
-.beta {
+.beta,
+.new-event {
   position: relative;
   /*max-width: 50%;*/
 }
@@ -404,6 +405,23 @@ ul.hide {
   font-family: arial, sans-serif;
   box-shadow: rgba(0,0,0,.5) -2px 2px 4px;
   line-height: normal;
+}
+.new-event::after {
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  content: "NEW";
+  display: inline-block;
+  color: #fff;
+  background-color: red;
+  padding: 6px 8px;
+  border-radius: 20px;
+  font-size: .825rem;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+  box-shadow: rgba(0,0,0,.5) -2px 2px 4px;
+  line-height: normal;
+  z-index: 1000;
 }
 @media screen and (min-width: 980px) {
   #showmenu {
