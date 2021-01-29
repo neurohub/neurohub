@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+<!-- redirect -->
+<meta http-equiv="refresh" content="15; URL=https://github.com/neurohub/neurohub_documentation/wiki" />
 <!-- favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -62,6 +64,7 @@
     <!-- statement section -->
     <section class="extra-top">
       <div class="section-content">
+        <h1 style="color: red;">This page has moved. You will be redirected in <span class="timer" style="color: #343434;">15</span> seconds. If your browser does not refresh, please <a href="https://github.com/neurohub/neurohub_documentation/wiki">click here</a></h1>
         <h1 class="full-width text-center">How to Access the UK Biobank</h1>
         <div class="col-2 flex" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-offset="100"><img src="images/infographic-what.png" class="infographic" alt="Infographic showing different modalities around HBHL logo"></div>
         <div class="col-2" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delay="250">
@@ -221,6 +224,13 @@
 <script>
   AOS.init({duration: 1000, offset: 120,});
 </script>
+<script type="text/javascript">
+var timer = 15;
 
+var interval = setInterval(function() {
+    timer--;
+    $('.timer').text(timer);
+    if (timer === 0) clearInterval(interval);
+}, 1000);
 </script>
 </body></html>
