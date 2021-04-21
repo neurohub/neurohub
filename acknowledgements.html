@@ -21,14 +21,15 @@
 <meta name="theme-color" content="#ffffff">
 <!-- general -->
 <meta charset="utf-8">
-<title>NeuroHub | News</title>
+<title>NeuroHub</title>
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="NeuroHub - An Open Science Infrastructure for Reproducible, Collaborative, Multidisciplinary Scientific Research. This is an event article page for the website of the NeuroHub Project.">
+<meta name="description" content="NeuroHub - An Open Science Infrastructure for Reproducible, Collaborative, Multidisciplinary Scientific Research.">
 <meta name="keywords" content="Neuro, NeuroHub, Research, Big Data, Science, Medicine, Datalad">
 <meta name="author" content="Derek Lo @ 3design-dlo.com">
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="js/drop-down.js"></script>
@@ -39,56 +40,50 @@
 
   <nav class="site-nav">
     <div class="nav-container">
-      <a href="index.html"><img src="images/logo-neurohub.png" class="logo bottom" alt="NeuroHub logo"></a>
+      <a href="index.html"><img src="images/logo-neurohub.png" class="logo bottom active" alt="NeuroHub logo"></a>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item"><a href="#!">About</a>
+        <li class="nav-item"><a href="#!" class="active">About</a>
           <ul class="nav-dropdown">
             <li><a href="about.html">About Us</a></li>
             <li><a href="references.html">References</a></li>
-            <li><a href="acknowledgements.html">Acknowledgements</a></li>
+            <li><a href="acknowledgements.html" class="active">Acknowledgements</a></li>
           </ul>
         </li>
         <li class="nav-item"><a href="tools.html">Tools</a></li>
         <li class="nav-item"><a href="team.html">Team</a></li>
-        <li class="nav-item"><a href="events.html" class="active">Events</a></li>
+        <li class="nav-item"><a href="events.html">Events</a></li>
         <li class="nav-item"><a href="https://github.com/neurohub/neurohub_documentation/wiki">Documentation</a></li>
         <li class="nav-item"><a href="portal.html">Portal</a></li>
       </ul>
     </div>
   </nav>
+
+<div id="prompt" title="scroll down for more info">▼</div>
   <div class="content-wrapper">
-  <!-- article -->
+    <!-- technical section -->
     <section class="extra-top">
       <div class="section-content">
-        <div class="col-2 flex" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-offset="100"><img src="images/news/news-5.png" class="infographic"></div>
-        <div class="col-2" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delay="250">
-          <h2>NeuroHub Training Session</h2>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/aB-hFSGqUA4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>Advanced Concepts of the NeuroHub Platform<br>
-          Speakers: The NeuroHub Team<br>
-          Date: January 06 2020 @ 1:30 PM - 4:30 PM EST<br><br>
-          
-          Location: ONLINE - <strong>zoom link</strong> will be provided to registered attendees 1 day before the event<br><br>
-          Free event: Open to faculty, staff and students from McGill University, and all members of the Healthy Brains, Healthy Lives community
-          </p>
-          <p><strong>Summary</strong>: In this workshop, participants will gain hands-on, interactive experience with the advanced components of NeuroHub through a series of practical exercises on your own computer. Participants will work both individually and in groups during the workshop.</p>
-          <p>The topics that will be covered in this second training session will include the following:</p>
-          <ol>
-            <!-- <li>LORIS Data Query Tool (DQT) concepts and interactions with NeuroHub (UI)</li> -->
-            <li>Using the CBRAIN API</li>
-            <li>NeuroHub and JupyterHub Notebooks</li>
-          </ol>
-          <p>By completing this training workshop, participants will be able to continue their exploration of more advanced concepts and elements of NeuroHub, and learn to leverage the advanced capabilities of the API for data exploration and analysis.</p>
-          <p><strong>About:</strong> NeuroHub is an open platform that offers tools for efficient, collaborative and reproducible science in neuroinformatics, genomics, social sciences, biology and more. NeuroHub gives users access to streamlined systems for secure storage and sharing of multi- disciplinary data and powerful computational tools for data processing.</p>
-          <!-- <a href="https://www.eventbrite.ca/e/neurohub-training-session-advanced-concepts-of-the-neurohub-platform-tickets-128037279951"><button class="extra-margin font float-right">Register Now</button></a> -->
-          <div class="clear-all"></div>
-        </div>
+        <h1 class="full-width text-center">Acknowledgements</h1>
+        <h2>NeuroHub - HBHL - UK Biobank Acknowledgements</h2>
+        <p>This section contains the acknowledgement text that must be included in any research publications, presentations, conference materials or other communications, using one or both of the following statements, as appropriate.</p>
+        <h3>How to use:</h3>
+        <ol>
+          <li>If the NeuroHub portal was used exclusively, please include statements from (1).</li>
+          <li>If data from the UK Biobank allocation (UKBiobank Application 45551: Mechanistic modelling of neurodevelopment, neuroplasticity and neurodegeneration), was utilized/accessed via NeuroHub portal and/or Compute Canada, please include statements from both (1) and (2).</li>
+        </ol>
+        <h3>(1) NeuroHub - HBHL Acknowledgement</h3>
+        <p>This research used the NeuroHub infrastructure and was undertaken thanks in part to funding from the Canada First Research Excellence Fund, awarded through the Healthy Brains, Healthy Lives initiative at McGill University / Cette recherche a utilisé l'infrastructure NeuroHub, et été menée grâce, en partie, au soutien financier du Fonds d’excellence en recherche Apogée Canada, décerné à l’initiative Cerveau en santé, vie en santé à l'Université McGill.</p>
+        <p>This research was enabled in part by support provided by Calcul Québec and Compute Canada. / Il a été possible de réaliser cette recherche en partie grâce au soutien fourni par Calcul Québec et Calcul Canada.</p>
+        <h3>(2) UK Biobank Access through NeuroHub Acknowledgement</h3>
+        <p>This research has been conducted using the UK Biobank Resource under Application Number 45551. / Cette recherche a été menée grâce aux données de la "UK Biobank" numéro de dossier 45551.</p>
       </div>
-    </section>
-    <div class="clear-all"></div>
+    </div>
+  </section>
+  <div class="clear-all"></div>
 
    <!-- footer -->
+
     <footer>  
       <div class="section-content flex flex-align-center">
         <div class="logos">
@@ -117,6 +112,7 @@
     </footer>
   </div>
 </div>
+
 <script>
   $(function(){
     $("#showmenu").click(function(e){
@@ -127,8 +123,20 @@
     });
   });
 </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({duration: 800, offset: 50,});
-  </script>
+
+<script>
+  $(function(){
+    $(".accordian h3").click(function(e){
+    $(".accordian ul p.answer").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({duration: 1000, offset: 120,});
+</script>
 </body></html>
