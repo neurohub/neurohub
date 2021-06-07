@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!-- general -->
+<meta charset="utf-8">
+<title>NeuroHub</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="NeuroHub - An Open Science Infrastructure for Reproducible, Collaborative, Multidisciplinary Scientific Research.">
+<meta name="keywords" content="Neuro, NeuroHub, Research, Big Data, Science, Medicine, Datalad">
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <!-- navigation -->
+
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html"><img src="images/logo-neurohub.png" class="logo bottom active" alt="NeuroHub logo"></a>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+        <li class="nav-item"><a href="#!" class="active">About</a>
+          <ul class="nav-dropdown">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="acknowledgements.html">Acknowledgements</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="tools.html">Tools</a></li>
+        <li class="nav-item"><a href="team.html">Team</a></li>
+        <li class="nav-item"><a href="events.html">Events</a></li>
+        <li class="nav-item"><a href="https://github.com/neurohub/neurohub_documentation/wiki">Documentation</a></li>
+        <li class="nav-item"><a href="portal.html">Portal</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div id="prompt" title="scroll down for more info">▼</div>
+  <div class="content-wrapper">
+    <!-- technical section -->
+    <section class="extra-top">
+      <div class="section-content">
+        <h1 class="full-width text-center">Dashboard</h1>
+        <IFRAME WIDTH=100% HEIGHT=1200 FRAMEBORDER=0 SRC="https://app.smartsheet.com/b/publish?EQBCT=391d89cb359a4102bfba8fa6db3f1d66"></IFRAME>
+      </div>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+
+   <!-- footer -->
+
+    <footer>  
+      <div class="section-content flex flex-align-center">
+        <div class="logos">
+          <a href="https://www.mcgill.ca/hbhl/"><img src="images/logo-hbhl.png" alt="HBHL logo"></a>
+          <a href="http://ludmercentre.ca"><img src="images/logo-ludmer.png" alt="Ludmercentre logo"></a>
+          <a href="https://mcgill.ca"><img src="images/logo-mcgill.png" alt="McGill logo"></a>
+          <a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
+        </div>
+        <div class="col-2 font-white text-center">
+          <h3>Contact Us</h3>
+          General Inquiries: <a href="mailto:support@neurohub.ca" class="font-white">support@neurohub.ca</a>
+        </div>
+        <div class="col-4 font-white text-center">
+          <a href="https://github.com/neurohub" class="font-white">
+            <img src="images/logo-github.png" class="github-icon center">
+            <h3>Find us on GitHub</h3>            
+          </a>
+        </div>
+        <div class="col-4 font-white text-center">
+          <a href="https://twitter.com/HbhlNeuroHub" class="font-white">
+            <img src="images/logo-twitter.png" class="github-icon center">
+            <h3>Follow us on Twitter</h3>            
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({duration: 1000, offset: 120,});
+</script>
+</body></html>
